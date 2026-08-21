@@ -6,6 +6,10 @@ O objetivo do projeto não foi mostrar quantas bibliotecas eu sei instalar, e si
 
 ## Demonstração
 
+**🔗 Ver no ar: [guilhermeoliveira337.github.io/vitrine-react](https://guilhermeoliveira337.github.io/vitrine-react/)**
+
+Rodando localmente:
+
 ```bash
 npm install
 npm run dev
@@ -71,6 +75,12 @@ src/
 ├── types/        # contratos da API
 └── utils/        # formatação
 ```
+
+## Publicação
+
+Publicado no GitHub Pages por GitHub Actions a cada push na `main` ([workflow](.github/workflows/deploy.yml)).
+
+Como o Pages serve arquivos estáticos e não conhece as rotas do React Router, o build copia o `index.html` para `404.html`. O Pages devolve esse arquivo em qualquer caminho desconhecido, o React Router lê a URL e renderiza a tela certa. O efeito colateral conhecido é que rotas profundas chegam com status HTTP 404, mesmo renderizando corretamente — limitação de SPA em hospedagem estática.
 
 ## O que eu faria a seguir
 
