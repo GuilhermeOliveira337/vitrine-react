@@ -20,7 +20,7 @@ export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <CarrinhoProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Cabecalho />
           <main className="mx-auto max-w-6xl px-4 py-8">
             <Routes>
