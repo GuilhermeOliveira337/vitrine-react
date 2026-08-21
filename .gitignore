@@ -27,3 +27,7 @@ dist-ssr
 .env
 .env.local
 .DS_Store
+
+# config local do editor
+.claude/
+dist
