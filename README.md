@@ -17,6 +17,8 @@ npm run dev
 
 Abre em `http://localhost:5173`.
 
+![Preview do Vitrine](./preview.png)
+
 ## Stack
 
 | Ferramenta | Por que está aqui |
